@@ -10,11 +10,11 @@ namespace Catalyte.Apparel.API.Controllers
 {
 
     [ApiController]
-    [Route("api/[controller]")]
-    public class ProductController : ControllerBase
+    [Route("api/products")]
+    public class ProductsController : ControllerBase
     {
 
-        public ProductController()
+        public ProductsController()
         {
             
         }

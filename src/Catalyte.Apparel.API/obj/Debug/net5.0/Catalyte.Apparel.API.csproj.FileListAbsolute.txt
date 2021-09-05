@@ -38,3 +38,5 @@ C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net
 C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\obj\Debug\net5.0\Catalyte.Apparel.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\Humanizer.dll
+C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll

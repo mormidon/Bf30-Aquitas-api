@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Catalyte.Apparel.Data.Context
 {
-    public class ApparelCtx : DbContext
+    public class ApparelCtx : DbContext, IApparelCtx
     {
 
         public ApparelCtx(DbContextOptions<ApparelCtx> options) : base(options)
