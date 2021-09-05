@@ -16,7 +16,6 @@ C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\obj\Debug\net
 C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\obj\Debug\net5.0\Catalyte.Apparel.API.AssemblyInfoInputs.cache
 C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\obj\Debug\net5.0\Catalyte.Apparel.API.AssemblyInfo.cs
 C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\obj\Debug\net5.0\Catalyte.Apparel.API.csproj.CoreCompileInputs.cache
-C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\obj\Debug\net5.0\Catalyte.Apparel.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\obj\Debug\net5.0\Catalyte.Apparel.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\obj\Debug\net5.0\staticwebassets\Catalyte.Apparel.API.StaticWebAssets.Manifest.cache
 C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\obj\Debug\net5.0\staticwebassets\Catalyte.Apparel.API.StaticWebAssets.xml
@@ -27,3 +26,15 @@ C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\obj\Debug\net
 C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\obj\Debug\net5.0\ref\Catalyte.Apparel.API.dll
 C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\obj\Debug\net5.0\Catalyte.Apparel.API.pdb
 C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\obj\Debug\net5.0\Catalyte.Apparel.API.genruntimeconfig.cache
+C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\Catalyte.Apparel.Data.dll
+C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\Catalyte.Apparel.DTOs.dll
+C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\Catalyte.Apparel.Data.pdb
+C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\Catalyte.Apparel.DTOs.pdb
+C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\Npgsql.dll
+C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\gbudwick\Documents\Repos\apparel\src\Catalyte.Apparel.API\obj\Debug\net5.0\Catalyte.Apparel.API.MvcApplicationPartsAssemblyInfo.cs

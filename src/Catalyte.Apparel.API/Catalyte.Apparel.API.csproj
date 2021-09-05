@@ -8,4 +8,9 @@
 	  <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Catalyte.Apparel.Data\Catalyte.Apparel.Data.csproj" />
+    <ProjectReference Include="..\Catalyte.Apparel.DTOs\Catalyte.Apparel.DTOs.csproj" />
+  </ItemGroup>
+
 </Project>
