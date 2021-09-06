@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Catalyte.Apparel.DTOs.Products;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace Catalyte.Apparel.API.Controllers
 {
@@ -13,15 +14,17 @@ namespace Catalyte.Apparel.API.Controllers
     [Route("api/products")]
     public class ProductsController : ControllerBase
     {
+        private readonly ILogger<ProductsController> _logger;
 
-        public ProductsController()
+        public ProductsController(ILogger<ProductsController> logger)
         {
-            
+            _logger = logger;
         }
 
         [HttpGet]
         public ActionResult<List<ProductDTO>> GetProducts()
         {
+            _logger.LogInformation("logged");
             return new OkResult();
         }
 

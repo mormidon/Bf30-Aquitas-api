@@ -18,7 +18,7 @@ namespace Catalyte.Apparel.Data.Context
 
         public DbSet<Product> Products { get; set; }
 
-
+        public DbSet<Log> Logs { get; set; }    
 
     }
 }
