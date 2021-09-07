@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BGAiJxodWdSRyaY17sqojaS88H+qa4A5HYv7e9ZMvq8gGhT8QeU3WRokKkYeuTdZ5kB7KKpZloiJxtTW9o8jVg==",
+  "dgSpecHash": "XEVqeXxL0YwTsT3sReiMhBMSJLZKNDpN+q1ndmCV2C56ScLrQ8WXz5eBnvMjnq3ZaE93La38lHjxwnmPpZK3bQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\gbudwick\\Documents\\Repos\\apparel\\src\\Catalyte.Apparel.API\\Catalyte.Apparel.API.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\gbudwick\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\microsoft.openapi\\1.1.4\\microsoft.openapi.1.1.4.nupkg.sha512",
+    "C:\\Users\\gbudwick\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\npgsql\\5.0.7\\npgsql.5.0.7.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.7\\npgsql.entityframeworkcore.postgresql.5.0.7.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\swashbuckle.aspnetcore\\5.5.1\\swashbuckle.aspnetcore.5.5.1.nupkg.sha512",

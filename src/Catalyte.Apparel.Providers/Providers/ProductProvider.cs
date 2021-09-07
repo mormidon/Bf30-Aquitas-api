@@ -1,8 +1,9 @@
-﻿using Catalyte.Apparel.Data.Interfaces;
+﻿using Catalyte.Apparel.Data.Filters;
+using Catalyte.Apparel.Data.Interfaces;
 using Catalyte.Apparel.Data.Model;
-using Catalyte.Apparel.Providers.Filters;
 using Catalyte.Apparel.Providers.Interfaces;
-using System.Linq;
+using Catalyte.Apparel.Utilities;
+using System.Threading.Tasks;
 
 namespace Catalyte.Apparel.Providers.Providers
 {
@@ -15,11 +16,17 @@ namespace Catalyte.Apparel.Providers.Providers
             _productRepository = productRepository;
         }
 
-        public Product GetProductById(int productId)
+        public async Task<ProviderResponse<Product>> GetProductByIdAsync(int productId)
         {
-            return _productRepository.GetProducts()
-                .WhereProductIdEquals(productId)
-                .FirstOrDefault();
+            var product = await _productRepository.GetProductByIdAsync(productId);
+
+            return product == default
+                ? new ProviderResponse<Product>(null,
+                    ResponseTypes.NotFound,
+                    $"Product with Id:{productId} not found")
+                : new ProviderResponse<Product>(product,
+                    ResponseTypes.Success,
+                    Constants.Success);
         }
     }
 }

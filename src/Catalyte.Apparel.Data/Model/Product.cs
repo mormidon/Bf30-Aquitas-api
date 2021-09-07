@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Net.Http.Json;
+using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace Catalyte.Apparel.Data.Model
 {
@@ -18,16 +21,20 @@ namespace Catalyte.Apparel.Data.Model
 
         public DateTime ReleaseDate { get; set; }
 
-        private string PrimaryColorCode { get; set; }
+        public string PrimaryColorCode { get; set; }
 
-        private string SecondaryColorCode { get; set; }
+        public string SecondaryColorCode { get; set; }
 
-        private string StyleNumber { get; set; }
+        public string StyleNumber { get; set; }
 
-        private string GlobalProductCode { get; set; }
+        public string GlobalProductCode { get; set; }
 
-        private bool Active { get; set; }
+        public bool Active { get; set; }
 
+        public override string ToString()
+        {
+            return JsonConvert.SerializeObject(this);
+        }
     }
 
 }

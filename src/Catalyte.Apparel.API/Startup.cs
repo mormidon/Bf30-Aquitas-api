@@ -1,4 +1,5 @@
 using Catalyte.Apparel.Data;
+using Catalyte.Apparel.Data.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -20,7 +21,7 @@ namespace Catalyte.Apparel.API
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
-        ,
+        
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -37,7 +38,7 @@ namespace Catalyte.Apparel.API
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ApparelCtx db)
         {
             if (env.IsDevelopment())
             {
@@ -45,6 +46,8 @@ namespace Catalyte.Apparel.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Catalyte.Apparel.API v1"));
             }
+
+            db.Database.EnsureCreated();
 
             app.UseHttpsRedirection();
 

@@ -1,9 +1,11 @@
-﻿using Catalyte.Apparel.Data.Model;
+﻿using System.Threading.Tasks;
+using Catalyte.Apparel.Data.Model;
+using Catalyte.Apparel.Utilities;
 
 namespace Catalyte.Apparel.Providers.Interfaces
 {
     public interface IProductProvider
     {
-        Product GetProductById(int productId);
+        Task<ProviderResponse<Product>> GetProductByIdAsync(int productId);
     }
 }
