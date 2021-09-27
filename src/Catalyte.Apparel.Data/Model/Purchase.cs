@@ -8,6 +8,10 @@ namespace Catalyte.Apparel.Data.Model
 {
     public class Purchase : BaseEntity
     {
-        
+        public DeliveryAddress DeliveryAddress { get; set; }
+
+        public BillingAddress BillingAddress { get; set; }
+
+        public List<LineItem> LineItems { get; set; }
     }
 }

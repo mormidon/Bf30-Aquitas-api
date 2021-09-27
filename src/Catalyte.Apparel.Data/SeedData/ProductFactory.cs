@@ -113,34 +113,38 @@ namespace Catalyte.Apparel.Data.SeedData
 
             for (var i = 0; i < numberOfProducts; i++)
             {
-                productList.Add(CreateRandomProduct());
+                productList.Add(CreateRandomProduct(i+1));
             }
 
             return productList;
         }
 
-        private Product CreateRandomProduct()
+        private Product CreateRandomProduct(int id)
         {
             return new Product
             {
+                Id=id,
                 Category = Categories[_rand.Next(0, 9)],
                 Type = "Pant",
                 Demographic = GetDemographic(),
                 GlobalProductCode = GetRandomProductId(),
-                StyleNumber = GetStyleCode()
+                StyleNumber = GetStyleCode(),
+                ReleaseDate = DateTime.Now,
+                DateCreated = DateTime.UtcNow,
+                DateModified = DateTime.UtcNow
             };
         }
-
-
-
-
 
         private string RandomString(int size, bool lowerCase = false)
         {
 
+            // ** Learning moment **
             // Code From
             // https://www.c-sharpcorner.com/article/generating-random-number-and-string-in-C-Sharp/
 
+            // ** Learning moment **
+            // Always use a string builder when concatenating more than a couple of strings.
+            // Why? https://www.geeksforgeeks.org/c-sharp-string-vs-stringbuilder/
             var builder = new StringBuilder(size);
 
             // Unicode/ASCII Letters are divided into two blocks
@@ -154,6 +158,9 @@ namespace Catalyte.Apparel.Data.SeedData
 
             for (var i = 0; i < size; i++)
             {
+                // ** Learning moment **
+                // Because 'char' is a reserved word you can put '@' at the beginning to allow
+                // its use as a variable name.  You could do the same thing with 'class'
                 var @char = (char)_rand.Next(offset, offset + lettersOffset);
                 builder.Append(@char);
             }

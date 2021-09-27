@@ -1,17 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Catalyte.Apparel.Data.Model;
+using Catalyte.Apparel.Data.SeedData;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
 
 namespace Catalyte.Apparel.Data.Context
 {
-    public static class SeedData
+    public static class Extensions
     {
-        public static void CreateSeedData(this ModelBuilder modelBuilder)
+        public static void SeedData(this ModelBuilder modelBuilder)
         {
+            var productFactory = new ProductFactory();
 
+            modelBuilder.Entity<Product>().HasData(productFactory.GenerateRandomProducts(7));
         }
     }
 }

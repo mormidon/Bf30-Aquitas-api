@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Catalyte.Apparel.Data.Model;
+﻿using Catalyte.Apparel.Data.Model;
+using Catalyte.Apparel.Data.SeedData;
 using Microsoft.EntityFrameworkCore;
 
 namespace Catalyte.Apparel.Data.Context
@@ -12,15 +8,18 @@ namespace Catalyte.Apparel.Data.Context
     {
 
         public ApparelCtx(DbContextOptions<ApparelCtx> options) : base(options)
-        {
-
-        }
+        { }
 
         public DbSet<Product> Products { get; set; }
 
+        public DbSet<LineItem> LineItems { get; set; }
+
+        public DbSet<Purchase> Purchases { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.CreateSeedData();
+            modelBuilder.SeedData();
         }
 
     }

@@ -8,7 +8,10 @@ namespace Catalyte.Apparel.Data.Context
     {
 
         public DbSet<Product> Products { get; set; }
-        
+
+        public DbSet<LineItem> LineItems { get; set; }
+
+        public DbSet<Purchase> Purchases { get; set; }
     }
 
 }
