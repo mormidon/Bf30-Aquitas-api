@@ -1,7 +1,9 @@
-﻿using Catalyte.Apparel.Providers.Interfaces;
+﻿using System.Collections.Generic;
+using Catalyte.Apparel.Providers.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
+using Catalyte.Apparel.Data.Model;
 
 namespace Catalyte.Apparel.API.Controllers
 {
@@ -19,16 +21,24 @@ namespace Catalyte.Apparel.API.Controllers
             _productProvider = productProvider;
         }
 
-        //[HttpGet]
-        //public ActionResult<ProviderResponse<ProductDTO>> GetProducts()
-        //{
-        //    _logger.LogInformation("logged");
+        [HttpGet]
+        public async Task<ActionResult<List<Product>>> GetProductsAsync()
+        {
 
-        //    return new OkObjectResult();
-        //}
+            try
+            {
+                var response = await _productProvider.GetProductsAsync();
+                return response.ToActionResult();
+            }
+            catch
+            {
+                return BadRequest();
+            }
+
+        }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetProductByIdAsync(int id)
+        public async Task<ActionResult<Product>> GetProductByIdAsync(int id)
         {
 
             try

@@ -1,7 +1,9 @@
-﻿using Catalyte.Apparel.Data.Context;
+﻿using System.Collections.Generic;
+using Catalyte.Apparel.Data.Context;
 using Catalyte.Apparel.Data.Interfaces;
 using Catalyte.Apparel.Data.Model;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Catalyte.Apparel.Data.Respositories
 {
@@ -19,7 +21,11 @@ namespace Catalyte.Apparel.Data.Respositories
         {
             return await _ctx.Products.FindAsync(productId);
         }
-        
+
+        public async Task<IEnumerable<Product>> GetProductsAsync()
+        {
+            return await _ctx.Products.ToListAsync();
+        }
     }
 
 }

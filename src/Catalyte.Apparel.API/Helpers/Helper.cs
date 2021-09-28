@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
-using Catalyte.Apparel.Utilities;
-using Microsoft.AspNetCore.Http;
+﻿using Catalyte.Apparel.Utilities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Catalyte.Apparel.API.Controllers
 {
-     public static class Helper
+    public static class Helper
      {
          public static ActionResult ToActionResult<T>(this ProviderResponse<T> response)
          {
@@ -21,6 +14,5 @@ namespace Catalyte.Apparel.API.Controllers
                  _ => new BadRequestResult()
              };
         }
-
     }
 }

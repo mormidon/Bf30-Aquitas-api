@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Lg5f90a8W8if4lijvd0kV6kAFO+i6lczcyu81rmh8B8b1c5VbiGojD00dFYhJ8tM3Grin4/+6FqH3b/FUBUPhg==",
+  "dgSpecHash": "dTo2RyAjfa/pnMMHskthE4mmQgtkXP+VmKprKbsLoiq0g4UMN3+evuV8NCHII58xuvuMXrE7L/34BW+xKbABqQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\gbudwick\\Documents\\Repos\\apparel\\src\\Catalyte.Apparel.API\\Catalyte.Apparel.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gbudwick\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\gbudwick\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\5.0.10\\microsoft.aspnetcore.authentication.google.5.0.10.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.9\\microsoft.entityframeworkcore.5.0.9.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.9\\microsoft.entityframeworkcore.abstractions.5.0.9.nupkg.sha512",

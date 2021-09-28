@@ -1,8 +1,9 @@
-﻿using Catalyte.Apparel.Data.Filters;
-using Catalyte.Apparel.Data.Interfaces;
+﻿using Catalyte.Apparel.Data.Interfaces;
 using Catalyte.Apparel.Data.Model;
 using Catalyte.Apparel.Providers.Interfaces;
 using Catalyte.Apparel.Utilities;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Catalyte.Apparel.Providers.Providers
@@ -27,6 +28,14 @@ namespace Catalyte.Apparel.Providers.Providers
                 : new ProviderResponse<Product>(product,
                     ResponseTypes.Success,
                     Constants.Success);
+        }
+
+        public async Task<ProviderResponse<List<Product>>> GetProductsAsync()
+        {
+            var products = await _productRepository.GetProductsAsync();
+            return new ProviderResponse<List<Product>>(products.ToList(),
+                ResponseTypes.Success,
+                Constants.Success);
         }
     }
 }
