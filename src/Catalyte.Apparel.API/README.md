@@ -31,7 +31,7 @@ Used for creating EF migrations
 `Install-Package Microsoft.EntityFrameworkCore.Design -Version 5.0.10`
 
 #### Swashbuckle
-This tool creates an interface for the API when you run the application.  You can use markup in the controllers to show documentation on the interface.  It is preinstalled when creating a new API with the newest versions of Visual Studio.
+Also known as Swagger, this tool creates an interface for the API when you run the application.  You can use markup in the controllers to show documentation on the interface.  It is preinstalled with basic configuration (Startup.cs) when creating a new API with the newest versions of Visual Studio.
 https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio
 
 
