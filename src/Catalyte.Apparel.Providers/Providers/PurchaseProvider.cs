@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System;
+using AutoMapper;
 using Catalyte.Apparel.Data.Interfaces;
 using Catalyte.Apparel.Data.Model;
 using Catalyte.Apparel.DTOs.Products;
@@ -24,15 +25,36 @@ namespace Catalyte.Apparel.Providers.Providers
         {
             var purchase = await _purchaseRepository.GetPurchaseByIdAsync(purchaseId);
 
-            return purchase == default
-                ? new ProviderResponse<PurchaseDTO>(
-                    null,
-                    ResponseTypes.NotFound,
-                    $"Purchase with Id:{purchaseId} not found")
-                : new ProviderResponse<PurchaseDTO>(
-                    _mapper.Map<PurchaseDTO>(purchase),
-                    ResponseTypes.Success,
-                    Constants.Success);
+            try
+            {
+                if (purchase == default)
+                {
+
+                    return new ProviderResponse<PurchaseDTO>(
+                        null,
+                        ResponseTypes.NotFound,
+                        $"Purchase with Id:{purchaseId} not found");
+                }
+                else
+                {
+                    return new ProviderResponse<PurchaseDTO>(
+                        new PurchaseDTO()
+                        {
+                            OrderDate = purchase.OrderDate,
+                            DeliveryAddress = _mapper.Map<DeliveryAddressDTO>(purchase),
+                            BillingAddress = _mapper.Map<BillingAddressDTO>(purchase)
+                        },
+                        ResponseTypes.Success,
+                        Constants.Success);
+                }
+            }
+            catch (Exception ex)
+            {
+                var t = ex;
+            }
+
+            return null;
+
 
         }
 
@@ -41,7 +63,13 @@ namespace Catalyte.Apparel.Providers.Providers
             return new Mapper(new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<Purchase, PurchaseDTO>();
-                cfg.CreateMap<Purchase, DeliveryAddress>();
+                cfg.CreateMap<Purchase, DeliveryAddressDTO>();
+                cfg.CreateMap<Purchase, BillingAddressDTO>()
+                    .ForMember(dest => dest.Email,
+                        opt => opt.MapFrom(src => src.BillingEmail))
+                    .ForMember(dest => dest.Phone,
+                        opt => opt.MapFrom(src => src.BillingPhone));
+
             }));
         }
     }

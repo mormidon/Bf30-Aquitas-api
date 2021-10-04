@@ -26,7 +26,7 @@ namespace Catalyte.Apparel.Data.Model
         [MaxLength(100)]
         public string BillingEmail { get; set; }
 
-        [MaxLength(12)]
+        [MaxLength(15)]
         public string BillingPhone { get; set; }
 
         [MaxLength(50)]
