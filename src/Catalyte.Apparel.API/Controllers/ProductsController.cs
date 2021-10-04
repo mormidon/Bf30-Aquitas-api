@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using Catalyte.Apparel.DTOs.Products;
 using Catalyte.Apparel.Providers.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
 using System.Threading.Tasks;
-using Catalyte.Apparel.Data.Model;
 
 namespace Catalyte.Apparel.API.Controllers
 {
@@ -22,7 +22,7 @@ namespace Catalyte.Apparel.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Product>>> GetProductsAsync()
+        public async Task<ActionResult<List<ProductDTO>>> GetProductsAsync()
         {
 
             try
@@ -38,7 +38,7 @@ namespace Catalyte.Apparel.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Product>> GetProductByIdAsync(int id)
+        public async Task<ActionResult<ProductDTO>> GetProductByIdAsync(int id)
         {
 
             try

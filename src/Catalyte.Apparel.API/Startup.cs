@@ -1,5 +1,6 @@
 using Catalyte.Apparel.Data;
 using Catalyte.Apparel.Data.Context;
+using Catalyte.Apparel.Providers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -29,6 +30,7 @@ namespace Catalyte.Apparel.API
         {
 
             services.AddDataServices(Configuration);
+            services.AddProviders();
 
             //services.AddAuthentication()
             //    .AddGoogle(options =>

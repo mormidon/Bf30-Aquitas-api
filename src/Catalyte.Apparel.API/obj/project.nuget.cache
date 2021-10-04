@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "atC4J0Tl2PQa+4sxMjS3PpbS7rd6zBxoXZr/qbIncvO6huNjKguDQVlgtEsFGxaPPe323iI306KOsdBDKiewhA==",
+  "dgSpecHash": "G1IFo/nyTqcCiIzc4wheDWm1qUOKwXAqwAnI5xkZSIZf6OdisugN7t1objOe+A+RimVnVNGsLajPpV/E5WRrzA==",
   "success": true,
   "projectFilePath": "C:\\Users\\gbudwick\\Documents\\Repos\\apparel\\src\\Catalyte.Apparel.API\\Catalyte.Apparel.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\gbudwick\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",
@@ -79,7 +80,7 @@
     "C:\\Users\\gbudwick\\.nuget\\packages\\system.net.sockets\\4.3.0\\system.net.sockets.4.3.0.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
-    "C:\\Users\\gbudwick\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\gbudwick\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "C:\\Users\\gbudwick\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",

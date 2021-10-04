@@ -5,7 +5,7 @@ using Catalyte.Apparel.Data.Model;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace Catalyte.Apparel.Data.Respositories
+namespace Catalyte.Apparel.Data.Repositories
 {
 
     public class ProductRepository : IProductRepository

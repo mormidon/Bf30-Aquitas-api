@@ -1,6 +1,6 @@
 ﻿using Catalyte.Apparel.Data.Context;
 using Catalyte.Apparel.Data.Interfaces;
-using Catalyte.Apparel.Data.Respositories;
+using Catalyte.Apparel.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +18,7 @@ namespace Catalyte.Apparel.Data
 
             services.AddScoped<IApparelCtx>(provider => provider.GetService<ApparelCtx>());
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IPurchaseRepository, PurchaseRepository>();
 
             return services;
 
