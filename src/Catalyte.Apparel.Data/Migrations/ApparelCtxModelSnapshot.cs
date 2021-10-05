@@ -50,6 +50,17 @@ namespace Catalyte.Apparel.Data.Migrations
                     b.HasIndex("PurchaseId");
 
                     b.ToTable("LineItems");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DateCreated = new DateTime(2021, 10, 4, 15, 39, 24, 705, DateTimeKind.Utc).AddTicks(9727),
+                            DateModified = new DateTime(2021, 10, 4, 15, 39, 24, 705, DateTimeKind.Utc).AddTicks(9734),
+                            ProductId = 1,
+                            PurchaseId = 1,
+                            Quantity = 1
+                        });
                 });
 
             modelBuilder.Entity("Catalyte.Apparel.Data.Model.Product", b =>
@@ -107,91 +118,91 @@ namespace Catalyte.Apparel.Data.Migrations
                         {
                             Id = 1,
                             Active = false,
-                            Category = "Running",
-                            DateCreated = new DateTime(2021, 10, 4, 14, 34, 57, 447, DateTimeKind.Utc).AddTicks(2779),
-                            DateModified = new DateTime(2021, 10, 4, 14, 34, 57, 447, DateTimeKind.Utc).AddTicks(3587),
+                            Category = "Hockey",
+                            DateCreated = new DateTime(2021, 10, 4, 15, 39, 24, 704, DateTimeKind.Utc).AddTicks(1676),
+                            DateModified = new DateTime(2021, 10, 4, 15, 39, 24, 704, DateTimeKind.Utc).AddTicks(2312),
                             Demographic = "Women",
-                            GlobalProductCode = "po-AUOXIJI",
-                            ReleaseDate = new DateTime(2021, 10, 4, 10, 34, 57, 443, DateTimeKind.Local).AddTicks(8295),
-                            StyleNumber = "scILMWK",
+                            GlobalProductCode = "po-ZQAHBOE",
+                            ReleaseDate = new DateTime(2021, 10, 4, 11, 39, 24, 700, DateTimeKind.Local).AddTicks(8469),
+                            StyleNumber = "scISBXS",
                             Type = "Pant"
                         },
                         new
                         {
                             Id = 2,
                             Active = false,
-                            Category = "Baseball",
-                            DateCreated = new DateTime(2021, 10, 4, 14, 34, 57, 447, DateTimeKind.Utc).AddTicks(4470),
-                            DateModified = new DateTime(2021, 10, 4, 14, 34, 57, 447, DateTimeKind.Utc).AddTicks(4473),
+                            Category = "Skateboarding",
+                            DateCreated = new DateTime(2021, 10, 4, 15, 39, 24, 704, DateTimeKind.Utc).AddTicks(3157),
+                            DateModified = new DateTime(2021, 10, 4, 15, 39, 24, 704, DateTimeKind.Utc).AddTicks(3159),
                             Demographic = "Men",
-                            GlobalProductCode = "po-XRTNXKB",
-                            ReleaseDate = new DateTime(2021, 10, 4, 10, 34, 57, 447, DateTimeKind.Local).AddTicks(4399),
-                            StyleNumber = "scDKCQC",
+                            GlobalProductCode = "po-LOVWKBW",
+                            ReleaseDate = new DateTime(2021, 10, 4, 11, 39, 24, 704, DateTimeKind.Local).AddTicks(3110),
+                            StyleNumber = "scWZLQD",
                             Type = "Pant"
                         },
                         new
                         {
                             Id = 3,
                             Active = false,
-                            Category = "Running",
-                            DateCreated = new DateTime(2021, 10, 4, 14, 34, 57, 447, DateTimeKind.Utc).AddTicks(4514),
-                            DateModified = new DateTime(2021, 10, 4, 14, 34, 57, 447, DateTimeKind.Utc).AddTicks(4517),
+                            Category = "Baseball",
+                            DateCreated = new DateTime(2021, 10, 4, 15, 39, 24, 704, DateTimeKind.Utc).AddTicks(3178),
+                            DateModified = new DateTime(2021, 10, 4, 15, 39, 24, 704, DateTimeKind.Utc).AddTicks(3179),
                             Demographic = "Women",
-                            GlobalProductCode = "po-FRCLRBY",
-                            ReleaseDate = new DateTime(2021, 10, 4, 10, 34, 57, 447, DateTimeKind.Local).AddTicks(4500),
-                            StyleNumber = "scMWFKY",
+                            GlobalProductCode = "po-WXRJZPA",
+                            ReleaseDate = new DateTime(2021, 10, 4, 11, 39, 24, 704, DateTimeKind.Local).AddTicks(3171),
+                            StyleNumber = "scCPCJF",
                             Type = "Pant"
                         },
                         new
                         {
                             Id = 4,
                             Active = false,
-                            Category = "Baseball",
-                            DateCreated = new DateTime(2021, 10, 4, 14, 34, 57, 447, DateTimeKind.Utc).AddTicks(4554),
-                            DateModified = new DateTime(2021, 10, 4, 14, 34, 57, 447, DateTimeKind.Utc).AddTicks(4558),
+                            Category = "Football",
+                            DateCreated = new DateTime(2021, 10, 4, 15, 39, 24, 704, DateTimeKind.Utc).AddTicks(3194),
+                            DateModified = new DateTime(2021, 10, 4, 15, 39, 24, 704, DateTimeKind.Utc).AddTicks(3196),
                             Demographic = "Men",
-                            GlobalProductCode = "po-XDTUKIT",
-                            ReleaseDate = new DateTime(2021, 10, 4, 10, 34, 57, 447, DateTimeKind.Local).AddTicks(4542),
-                            StyleNumber = "scRBYEF",
+                            GlobalProductCode = "po-LRPIFHZ",
+                            ReleaseDate = new DateTime(2021, 10, 4, 11, 39, 24, 704, DateTimeKind.Local).AddTicks(3190),
+                            StyleNumber = "scRGMRH",
                             Type = "Pant"
                         },
                         new
                         {
                             Id = 5,
                             Active = false,
-                            Category = "Football",
-                            DateCreated = new DateTime(2021, 10, 4, 14, 34, 57, 447, DateTimeKind.Utc).AddTicks(4579),
-                            DateModified = new DateTime(2021, 10, 4, 14, 34, 57, 447, DateTimeKind.Utc).AddTicks(4581),
-                            Demographic = "Women",
-                            GlobalProductCode = "po-KLHFUPD",
-                            ReleaseDate = new DateTime(2021, 10, 4, 10, 34, 57, 447, DateTimeKind.Local).AddTicks(4575),
-                            StyleNumber = "scUJLSR",
+                            Category = "Boxing",
+                            DateCreated = new DateTime(2021, 10, 4, 15, 39, 24, 704, DateTimeKind.Utc).AddTicks(3209),
+                            DateModified = new DateTime(2021, 10, 4, 15, 39, 24, 704, DateTimeKind.Utc).AddTicks(3211),
+                            Demographic = "Men",
+                            GlobalProductCode = "po-RPRXWNL",
+                            ReleaseDate = new DateTime(2021, 10, 4, 11, 39, 24, 704, DateTimeKind.Local).AddTicks(3204),
+                            StyleNumber = "scVKOTH",
                             Type = "Pant"
                         },
                         new
                         {
                             Id = 6,
                             Active = false,
-                            Category = "Football",
-                            DateCreated = new DateTime(2021, 10, 4, 14, 34, 57, 447, DateTimeKind.Utc).AddTicks(4603),
-                            DateModified = new DateTime(2021, 10, 4, 14, 34, 57, 447, DateTimeKind.Utc).AddTicks(4605),
+                            Category = "Soccer",
+                            DateCreated = new DateTime(2021, 10, 4, 15, 39, 24, 704, DateTimeKind.Utc).AddTicks(3232),
+                            DateModified = new DateTime(2021, 10, 4, 15, 39, 24, 704, DateTimeKind.Utc).AddTicks(3234),
                             Demographic = "Men",
-                            GlobalProductCode = "po-VNDZQUG",
-                            ReleaseDate = new DateTime(2021, 10, 4, 10, 34, 57, 447, DateTimeKind.Local).AddTicks(4599),
-                            StyleNumber = "scHIWSG",
+                            GlobalProductCode = "po-YSNFPKK",
+                            ReleaseDate = new DateTime(2021, 10, 4, 11, 39, 24, 704, DateTimeKind.Local).AddTicks(3227),
+                            StyleNumber = "scHWIYL",
                             Type = "Pant"
                         },
                         new
                         {
                             Id = 7,
                             Active = false,
-                            Category = "Boxing",
-                            DateCreated = new DateTime(2021, 10, 4, 14, 34, 57, 447, DateTimeKind.Utc).AddTicks(4727),
-                            DateModified = new DateTime(2021, 10, 4, 14, 34, 57, 447, DateTimeKind.Utc).AddTicks(4728),
-                            Demographic = "Women",
-                            GlobalProductCode = "po-PEGMNBC",
-                            ReleaseDate = new DateTime(2021, 10, 4, 10, 34, 57, 447, DateTimeKind.Local).AddTicks(4716),
-                            StyleNumber = "scKYEDE",
+                            Category = "Baseball",
+                            DateCreated = new DateTime(2021, 10, 4, 15, 39, 24, 704, DateTimeKind.Utc).AddTicks(3248),
+                            DateModified = new DateTime(2021, 10, 4, 15, 39, 24, 704, DateTimeKind.Utc).AddTicks(3250),
+                            Demographic = "Men",
+                            GlobalProductCode = "po-QERRRXL",
+                            ReleaseDate = new DateTime(2021, 10, 4, 11, 39, 24, 704, DateTimeKind.Local).AddTicks(3243),
+                            StyleNumber = "scALLJY",
                             Type = "Pant"
                         });
                 });
@@ -283,8 +294,8 @@ namespace Catalyte.Apparel.Data.Migrations
                             BillingStreet = "123 Main",
                             BillingStreet2 = "Apt A",
                             BillingZip = "31675",
-                            DateCreated = new DateTime(2021, 10, 4, 14, 34, 57, 449, DateTimeKind.Utc).AddTicks(6099),
-                            DateModified = new DateTime(2021, 10, 4, 14, 34, 57, 449, DateTimeKind.Utc).AddTicks(6110),
+                            DateCreated = new DateTime(2021, 10, 4, 15, 39, 24, 706, DateTimeKind.Utc).AddTicks(8369),
+                            DateModified = new DateTime(2021, 10, 4, 15, 39, 24, 706, DateTimeKind.Utc).AddTicks(8383),
                             DeliveryCity = "Birmingham",
                             DeliveryFirstName = "Max",
                             DeliveryLastName = "Space",

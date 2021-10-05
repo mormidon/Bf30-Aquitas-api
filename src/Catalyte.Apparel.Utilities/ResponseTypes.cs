@@ -10,6 +10,6 @@ namespace Catalyte.Apparel.Utilities
     {
         Success,
         NotFound,
-        Error
+        Exception
     }
 }

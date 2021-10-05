@@ -50,6 +50,17 @@ namespace Catalyte.Apparel.Data.Model
         [MaxLength(10)]
         public int DeliveryZip { get; set; }
 
-        public List<LineItem> LineItems { get; set; }
+        [MaxLength(16)]
+        public string CardNumber { get; set; }
+        
+        public int CVV { get; set; }
+        
+        [MaxLength(5)]
+        public string Expiration { get; set; }
+
+        [MaxLength(100)]
+        public string CardHolder { get; set; }
+
+        public ICollection<LineItem> LineItems { get; set; }
     }
 }

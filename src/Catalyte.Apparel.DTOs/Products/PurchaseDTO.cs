@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Catalyte.Apparel.DTOs.Products
 {
@@ -9,5 +10,9 @@ namespace Catalyte.Apparel.DTOs.Products
         public DeliveryAddressDTO DeliveryAddress { get; set; }
 
         public BillingAddressDTO BillingAddress { get; set; }
+
+        public CreditCardDTO CreditCard { get; set; }
+
+        public List<LineItemDTO> LineItems { get; set; }
     }
 }

@@ -14,6 +14,18 @@ namespace Catalyte.Apparel.Data.Context
 
             modelBuilder.Entity<Product>().HasData(productFactory.GenerateRandomProducts(7));
 
+            var lineItem = new LineItem()
+            {
+                Id = 1,
+                DateCreated = DateTime.UtcNow,
+                DateModified = DateTime.UtcNow,
+                ProductId = 1,
+                Quantity = 1,
+                PurchaseId = 1
+            };
+
+            modelBuilder.Entity<LineItem>().HasData(lineItem);
+
             var purchase = new Purchase()
             {
                 Id = 1,
