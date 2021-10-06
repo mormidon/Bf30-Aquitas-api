@@ -10,7 +10,7 @@ namespace Catalyte.Apparel.Providers.Interfaces
 
         Task<ProviderResponse<PurchaseDTO>> GetPurchaseByIdAsync(int purchaseId);
 
-        Task<ProviderResponse<List<PurchaseDTO>>> GetPurchasesAsync(int page, int size);
+        Task<ProviderResponse<List<PurchaseDTO>>> GetPurchasesAsync(int page, int pageSize);
 
     }
 }

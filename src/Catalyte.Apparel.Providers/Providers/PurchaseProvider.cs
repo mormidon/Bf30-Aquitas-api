@@ -21,11 +21,11 @@ namespace Catalyte.Apparel.Providers.Providers
             _mapper = InitializeMapper();
         }
 
-        public async Task<ProviderResponse<List<PurchaseDTO>>> GetPurchasesAsync(int page, int size)
+        public async Task<ProviderResponse<List<PurchaseDTO>>> GetPurchasesAsync(int page, int pageSize)
         {
             try
             {
-                var purchases = await _purchaseRepository.GetPurchases();
+                var purchases = await _purchaseRepository.GetPurchases(page, pageSize);
 
                 var purchaseDTOs = new List<PurchaseDTO>();
                 purchases.ForEach(p =>

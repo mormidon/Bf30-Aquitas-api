@@ -1,8 +1,9 @@
-﻿using System;
-using Catalyte.Apparel.Data.Context;
+﻿using Catalyte.Apparel.Data.Context;
 using Catalyte.Apparel.Data.Interfaces;
 using Catalyte.Apparel.Data.Model;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,52 +12,31 @@ namespace Catalyte.Apparel.Data.Repositories
 {
     public class PurchaseRepository : IPurchaseRepository
     {
+        private readonly ILogger<PurchaseRepository> _logger;
         private readonly IApparelCtx _ctx;
 
-        public PurchaseRepository(IApparelCtx ctx)
+        public PurchaseRepository(ILogger<PurchaseRepository> logger, IApparelCtx ctx)
         {
+            _logger = logger;
             _ctx = ctx;
         }
 
         public async Task<Purchase> GetPurchaseByIdAsync(int purchaseId)
         {
-            try
-            {
-                return await _ctx.Purchases
-                    .Include(p => p.LineItems)
-                    .ThenInclude(p => p.Product)
-                    .FirstOrDefaultAsync(p => p.Id == purchaseId);
-            }
-            catch (Exception ex)
-            {
-                // Log exception.
-            }
-
-            return null;
+            return await _ctx.Purchases
+                .Include(p => p.LineItems)
+                .ThenInclude(p => p.Product)
+                .FirstOrDefaultAsync(p => p.Id == purchaseId);
         }
 
-        public async Task<List<Purchase>> GetPurchases(int page, int size)
+        public async Task<List<Purchase>> GetPurchases(int page, int pageSize)
         {
-            try
-            {
                 return await _ctx.Purchases
                     .Include(p => p.LineItems)
                     .ThenInclude(p => p.Product)
-                    .Skip((page - 1) * size)
-                    .Take(size)
+                    .Skip((page - 1) * pageSize)
+                    .Take(pageSize)
                     .ToListAsync();
-            }
-            catch (Exception ex)
-            {
-                // Log exception.
-            }
-
-            return null;
-        }
-
-        public async Task<List<LineItem>> GetPurchaseLineItemsAsync(int purchaseId)
-        {
-            return await _ctx.LineItems.Where(e => e.PurchaseId == purchaseId).ToListAsync();
         }
     }
 }

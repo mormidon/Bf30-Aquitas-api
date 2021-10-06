@@ -32,9 +32,9 @@ namespace Catalyte.Apparel.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<PurchaseDTO>>> GetPurchasesAsync([FromQuery] int page = 1, int size = 50)
+        public async Task<ActionResult<List<PurchaseDTO>>> GetPurchasesAsync([FromQuery] int page = 1, int pageSize = 50)
         {
-            var response = await _purchaseProvider.GetPurchasesAsync(page, size);
+            var response = await _purchaseProvider.GetPurchasesAsync(page, pageSize);
             return response.ToActionResult();
         }
     }
