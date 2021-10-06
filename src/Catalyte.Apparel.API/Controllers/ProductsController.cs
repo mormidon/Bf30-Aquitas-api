@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace Catalyte.Apparel.API.Controllers
 {
-
     [ApiController]
     [Route("api/products")]
     public class ProductsController : ControllerBase
@@ -24,35 +23,15 @@ namespace Catalyte.Apparel.API.Controllers
         [HttpGet]
         public async Task<ActionResult<List<ProductDTO>>> GetProductsAsync()
         {
-
-            try
-            {
-                var response = await _productProvider.GetProductsAsync();
-                return response.ToActionResult();
-            }
-            catch
-            {
-                return BadRequest();
-            }
-
+            var response = await _productProvider.GetProductsAsync();
+            return response.ToActionResult();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<ProductDTO>> GetProductByIdAsync(int id)
         {
-
-            try
-            {
-                var response = await _productProvider.GetProductByIdAsync(id);
-                return response.ToActionResult();
-            }
-            catch
-            {
-                return BadRequest();
-            }
-
+            var response = await _productProvider.GetProductByIdAsync(id);
+            return response.ToActionResult();
         }
-
     }
-
 }

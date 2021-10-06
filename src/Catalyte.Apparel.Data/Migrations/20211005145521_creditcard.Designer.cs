@@ -3,15 +3,17 @@ using System;
 using Catalyte.Apparel.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Catalyte.Apparel.Data.Migrations
 {
     [DbContext(typeof(ApparelCtx))]
-    partial class ApparelCtxModelSnapshot : ModelSnapshot
+    [Migration("20211005145521_creditcard")]
+    partial class creditcard
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

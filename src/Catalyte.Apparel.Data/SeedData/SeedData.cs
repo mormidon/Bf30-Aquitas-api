@@ -44,6 +44,10 @@ namespace Catalyte.Apparel.Data.Context
                 DeliveryZip = 43690,
                 DeliveryFirstName = "Max",
                 DeliveryLastName = "Space",
+                CardHolder = "Max Perkins",
+                CardNumber = "1435678998761234",
+                Expiration = "11/21",
+                CVV = 456,
                 OrderDate = new DateTime(2021, 5, 4)
             };
 

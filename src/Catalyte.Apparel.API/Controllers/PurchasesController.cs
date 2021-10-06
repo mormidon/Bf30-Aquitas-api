@@ -1,4 +1,6 @@
-﻿using Catalyte.Apparel.API.Helpers;
+﻿using System;
+using System.Collections.Generic;
+using Catalyte.Apparel.API.Helpers;
 using Catalyte.Apparel.DTOs.Products;
 using Catalyte.Apparel.Providers.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -22,36 +24,18 @@ namespace Catalyte.Apparel.API.Controllers
             _purchaseProvider = purchaseProvider;
         }
 
-        //[HttpGet]
-        //public async Task<ActionResult<List<ProductDTO>>> GetProductsAsync()
-        //{
-
-        //    try
-        //    {
-        //        var response = await _productProvider.GetProductsAsync();
-        //        return response.ToActionResult();
-        //    }
-        //    catch
-        //    {
-        //        return BadRequest();
-        //    }
-
-        //}
-
         [HttpGet("{id}")]
         public async Task<ActionResult<PurchaseDTO>> GetPurchaseByIdAsync(int id)
         {
+            var response = await _purchaseProvider.GetPurchaseByIdAsync(id);
+            return response.ToActionResult();
+        }
 
-            try
-            {
-                var response = await _purchaseProvider.GetPurchaseByIdAsync(id);
-                return response.ToActionResult();
-            }
-            catch
-            {
-                return BadRequest();
-            }
-
+        [HttpGet]
+        public async Task<ActionResult<List<PurchaseDTO>>> GetPurchasesAsync([FromQuery] int page = 1, int size = 50)
+        {
+            var response = await _purchaseProvider.GetPurchasesAsync(page, size);
+            return response.ToActionResult();
         }
     }
 }

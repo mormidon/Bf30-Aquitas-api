@@ -21,6 +21,34 @@ namespace Catalyte.Apparel.Providers.Providers
             _mapper = InitializeMapper();
         }
 
+        public async Task<ProviderResponse<List<PurchaseDTO>>> GetPurchasesAsync(int page, int size)
+        {
+            try
+            {
+                var purchases = await _purchaseRepository.GetPurchases();
+
+                var purchaseDTOs = new List<PurchaseDTO>();
+                purchases.ForEach(p =>
+                {
+                    purchaseDTOs.Add(CreatePurchaseDTO(p));
+                });
+
+                return new ProviderResponse<List<PurchaseDTO>>(
+                    purchaseDTOs,
+                    ResponseTypes.Success,
+                    Constants.Success);
+            }
+            catch (Exception ex)
+            {
+                // Log error.
+                return new ProviderResponse<List<PurchaseDTO>>(
+                    null,
+                    ResponseTypes.Exception,
+                    ex.Message);
+            }
+
+        }
+
 
         public async Task<ProviderResponse<PurchaseDTO>> GetPurchaseByIdAsync(int purchaseId)
         {
@@ -34,14 +62,7 @@ namespace Catalyte.Apparel.Providers.Providers
                         ResponseTypes.NotFound,
                         $"Purchase with Id:{purchaseId} not found")
                     : new ProviderResponse<PurchaseDTO>(
-                        new PurchaseDTO()
-                        {
-                            OrderDate = purchase.OrderDate,
-                            DeliveryAddress = _mapper.Map<DeliveryAddressDTO>(purchase),
-                            BillingAddress = _mapper.Map<BillingAddressDTO>(purchase),
-                            CreditCard = _mapper.Map<CreditCardDTO>(purchase),
-                            LineItems = _mapper.Map<List<LineItemDTO>>(purchase.LineItems),
-                        },
+                        CreatePurchaseDTO(purchase),
                         ResponseTypes.Success,
                         Constants.Success);
             }
@@ -54,6 +75,18 @@ namespace Catalyte.Apparel.Providers.Providers
                     ex.Message);
             }
 
+        }
+
+        private PurchaseDTO CreatePurchaseDTO(Purchase purchase)
+        {
+                return new PurchaseDTO()
+                {
+                    OrderDate = purchase.OrderDate,
+                    LineItems = _mapper.Map<List<LineItemDTO>>(purchase.LineItems),
+                    DeliveryAddress = _mapper.Map<DeliveryAddressDTO>(purchase),
+                    BillingAddress = _mapper.Map<BillingAddressDTO>(purchase),
+                    CreditCard = _mapper.Map<CreditCardDTO>(purchase)
+                };
         }
 
         private Mapper InitializeMapper()
