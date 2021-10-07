@@ -31,12 +31,12 @@ namespace Catalyte.Apparel.Data.Repositories
 
         public async Task<List<Purchase>> GetPurchases(int page, int pageSize)
         {
-                return await _ctx.Purchases
-                    .Include(p => p.LineItems)
-                    .ThenInclude(p => p.Product)
-                    .Skip((page - 1) * pageSize)
-                    .Take(pageSize)
-                    .ToListAsync();
+            return await _ctx.Purchases
+                .Include(p => p.LineItems)
+                .ThenInclude(p => p.Product)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
         }
     }
 }

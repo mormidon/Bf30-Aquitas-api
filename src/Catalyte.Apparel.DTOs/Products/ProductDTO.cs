@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Metadata;
 
 namespace Catalyte.Apparel.DTOs.Products
 {
@@ -11,6 +12,8 @@ namespace Catalyte.Apparel.DTOs.Products
         public DateTime DateModified { get; set; }
 
         public string Name { get; set; }
+
+        public string Sku { get; set; }
 
         public string Description { get; set; }
 

@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using Catalyte.Apparel.API.Helpers;
-using Catalyte.Apparel.DTOs.Products;
+﻿using Catalyte.Apparel.DTOs.Purchases;
 using Catalyte.Apparel.Providers.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Catalyte.Apparel.API.Controllers
 {
     [ApiController]
     [Route("api/purchases")]
-    [HttpExceptionFilter]
     public class PurchasesController : ControllerBase
     {
         private readonly ILogger<PurchasesController> _logger;
@@ -34,8 +32,20 @@ namespace Catalyte.Apparel.API.Controllers
         [HttpGet]
         public async Task<ActionResult<List<PurchaseDTO>>> GetPurchasesAsync([FromQuery] int page = 1, int pageSize = 50)
         {
-            var response = await _purchaseProvider.GetPurchasesAsync(page, pageSize);
-            return response.ToActionResult();
+            if (page < 1 || pageSize < 1)
+                return new BadRequestObjectResult("Page and Page Size cannot be less than 1.");
+
+            try
+            {
+                var response = await _purchaseProvider.GetPurchasesAsync(page, pageSize);
+                return response.ToActionResult();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong: {ex}");
+                return StatusCode(500, ex);
+            }
+            
         }
     }
 }

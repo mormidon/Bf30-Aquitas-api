@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-using Catalyte.Apparel.DTOs.Products;
+﻿using Catalyte.Apparel.DTOs.Purchases;
 using Catalyte.Apparel.Utilities;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Catalyte.Apparel.Providers.Interfaces

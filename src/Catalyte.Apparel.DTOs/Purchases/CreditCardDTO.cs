@@ -1,4 +1,4 @@
-﻿namespace Catalyte.Apparel.DTOs.Products
+﻿namespace Catalyte.Apparel.DTOs.Purchases
 {
     public class CreditCardDTO
     {

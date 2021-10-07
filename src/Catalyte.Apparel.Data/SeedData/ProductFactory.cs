@@ -1,10 +1,7 @@
-﻿using System;
+﻿using Catalyte.Apparel.Data.Model;
+using System;
 using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using Catalyte.Apparel.Data.Model;
 
 namespace Catalyte.Apparel.Data.SeedData
 {
@@ -12,7 +9,7 @@ namespace Catalyte.Apparel.Data.SeedData
     {
         Random _rand = new();
 
-        private List<string> Colors = new()
+        private List<string> _colors = new()
         {
             "#000000", // white
             "#ffffff", // black
@@ -31,13 +28,13 @@ namespace Catalyte.Apparel.Data.SeedData
             "#b7c0c7"  // light gray
         };
 
-        private readonly List<string> Demographics = new()
+        private readonly List<string> _demographics = new()
         {
             "Men",
             "Women",
             "Kids"
         };
-        private readonly List<string> Categories = new()
+        private readonly List<string> _categories = new()
         {
             "Golf",
             "Soccer",
@@ -51,7 +48,7 @@ namespace Catalyte.Apparel.Data.SeedData
             "Weightlifting"
         };
 
-        private List<string> Adjectives = new()
+        private List<string> _adjectives = new()
         {
             "Lightweight",
             "Slim",
@@ -68,7 +65,7 @@ namespace Catalyte.Apparel.Data.SeedData
             "Heavy Duty"
         };
 
-        private List<string> Types = new()
+        private List<string> _types = new()
         {
             "Pant",
             "Short",
@@ -91,19 +88,30 @@ namespace Catalyte.Apparel.Data.SeedData
             "Pool Noodle"
         };
 
+        private List<string> _skus = new()
+        {
+            "SHL-100-Blue",
+            "SHL-100-Red",
+            "HOV-AB-KJ",
+            "TLX-DRESS-SM",
+            "ATK-34-RD",
+            "TRE-33-LRG",
+            "TRE-30-SM"
+        };
+
         private string GetDemographic()
         {
-            return Demographics[_rand.Next(0, 2)];
+            return _demographics[_rand.Next(0, 2)];
         }
 
         private string GetRandomProductId()
         {
-            return "po-" + RandomString(7, false);
+            return "po-" + RandomString(7);
         }
 
         private string GetStyleCode()
         {
-            return "sc" + RandomString(5, false);
+            return "sc" + RandomString(5);
         }
 
         public List<Product> GenerateRandomProducts(int numberOfProducts)
@@ -124,8 +132,9 @@ namespace Catalyte.Apparel.Data.SeedData
             return new Product
             {
                 Id=id,
-                Category = Categories[_rand.Next(0, 9)],
+                Category = _categories[_rand.Next(0, 9)],
                 Type = "Pant",
+                Sku = _skus[id-1],
                 Demographic = GetDemographic(),
                 GlobalProductCode = GetRandomProductId(),
                 StyleNumber = GetStyleCode(),
