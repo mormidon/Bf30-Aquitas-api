@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System;
+using AutoMapper;
 using Catalyte.Apparel.Data.Interfaces;
 using Catalyte.Apparel.Data.Model;
 using Catalyte.Apparel.DTOs.Products;
@@ -23,7 +24,7 @@ namespace Catalyte.Apparel.Providers.Providers
 
         public async Task<ProviderResponse<List<PurchaseDTO>>> GetPurchasesAsync(int page, int pageSize)
         {
-            var purchases = await _purchaseRepository.GetPurchases(page, pageSize);
+            var purchases = await _purchaseRepository.GetPurchasesAsync(page, pageSize);
 
             if (purchases == default)
             {
@@ -46,6 +47,29 @@ namespace Catalyte.Apparel.Providers.Providers
                 Constants.Success);
         }
 
+        public async Task<ProviderResponse<PurchaseDTO>> CreatePurchasesAsync(CreatePurchaseDTO model)
+        {
+            var newPurchase = new Purchase
+            {
+                OrderDate = DateTime.UtcNow,
+            };
+            newPurchase = _mapper.Map(model.DeliveryAddress, newPurchase);
+            newPurchase = _mapper.Map(model.BillingAddress, newPurchase);
+
+            var savedPurchase = await _purchaseRepository.CreatePurchaseAsync(newPurchase);
+
+            return new ProviderResponse<PurchaseDTO>(
+                new PurchaseDTO()
+                {
+                    OrderDate = savedPurchase.OrderDate,
+                    Id = savedPurchase.Id,
+                    DeliveryAddress = _mapper.Map<DeliveryAddressDTO>(savedPurchase),
+                    BillingAddress= _mapper.Map<BillingAddressDTO>(savedPurchase)
+                },
+                ResponseTypes.Created,
+                Constants.Success);
+        }
+
         public async Task<ProviderResponse<PurchaseDTO>> GetPurchaseByIdAsync(int purchaseId)
         {
             var purchase = await _purchaseRepository.GetPurchaseByIdAsync(purchaseId);
@@ -65,6 +89,7 @@ namespace Catalyte.Apparel.Providers.Providers
         {
             return new PurchaseDTO()
             {
+                Id = purchase.Id,
                 OrderDate = purchase.OrderDate,
                 LineItems = _mapper.Map<List<LineItemDTO>>(purchase.LineItems),
                 DeliveryAddress = _mapper.Map<DeliveryAddressDTO>(purchase),
@@ -78,14 +103,16 @@ namespace Catalyte.Apparel.Providers.Providers
             return new Mapper(new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<Purchase, PurchaseDTO>();
-                cfg.CreateMap<Purchase, DeliveryAddressDTO>();
+                cfg.CreateMap<Purchase, DeliveryAddressDTO>().ReverseMap();
                 cfg.CreateMap<Product, ProductDTO>();
                 cfg.CreateMap<Purchase, CreditCardDTO>();
+                cfg.CreateMap<CreatePurchaseDTO, Purchase>();
                 cfg.CreateMap<Purchase, BillingAddressDTO>()
                     .ForMember(dest => dest.Email,
                         opt => opt.MapFrom(src => src.BillingEmail))
                     .ForMember(dest => dest.Phone,
-                        opt => opt.MapFrom(src => src.BillingPhone));
+                        opt => opt.MapFrom(src => src.BillingPhone))
+                    .ReverseMap();
                 cfg.CreateMap<LineItem, LineItemDTO>();
 
             }));

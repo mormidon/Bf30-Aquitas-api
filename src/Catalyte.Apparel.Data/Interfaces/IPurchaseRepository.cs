@@ -8,6 +8,8 @@ namespace Catalyte.Apparel.Data.Interfaces
     {
         Task<Purchase> GetPurchaseByIdAsync(int purchaseId);
 
-        Task<List<Purchase>> GetPurchases(int page, int pageSize);
+        Task<List<Purchase>> GetPurchasesAsync(int page, int pageSize);
+
+        Task<Purchase> CreatePurchaseAsync(Purchase purchase);
     }
 }

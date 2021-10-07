@@ -12,5 +12,7 @@ namespace Catalyte.Apparel.Providers.Interfaces
 
         Task<ProviderResponse<List<PurchaseDTO>>> GetPurchasesAsync(int page, int pageSize);
 
+        Task<ProviderResponse<PurchaseDTO>> CreatePurchasesAsync(CreatePurchaseDTO model);
+
     }
 }

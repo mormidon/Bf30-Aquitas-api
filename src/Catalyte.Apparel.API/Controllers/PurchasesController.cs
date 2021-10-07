@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Catalyte.Apparel.Utilities;
 
 namespace Catalyte.Apparel.API.Controllers
 {
@@ -46,6 +47,19 @@ namespace Catalyte.Apparel.API.Controllers
                 return StatusCode(500, ex);
             }
             
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<List<PurchaseDTO>>> CreatePurchase([FromBody] CreatePurchaseDTO model)
+        {
+            var result = await _purchaseProvider.CreatePurchasesAsync(model);
+
+            if (result.ResponseType == ResponseTypes.Created)
+            {
+                return new CreatedResult($"/purchases/{result.ResponseObject.Id}", result.ResponseObject);
+            }
+
+            return result.ToActionResult();
         }
     }
 }

@@ -29,7 +29,7 @@ namespace Catalyte.Apparel.Data.Repositories
                 .FirstOrDefaultAsync(p => p.Id == purchaseId);
         }
 
-        public async Task<List<Purchase>> GetPurchases(int page, int pageSize)
+        public async Task<List<Purchase>> GetPurchasesAsync(int page, int pageSize)
         {
             return await _ctx.Purchases
                 .Include(p => p.LineItems)
@@ -37,6 +37,14 @@ namespace Catalyte.Apparel.Data.Repositories
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
                 .ToListAsync();
+        }
+
+        public async Task<Purchase> CreatePurchaseAsync(Purchase purchase)
+        { 
+            await _ctx.Purchases.AddAsync(purchase);
+            await _ctx.SaveChangesAsync();
+
+            return purchase;
         }
     }
 }
