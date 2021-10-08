@@ -14,7 +14,7 @@
 *.userprefs
 
 # Ignore development environment configuration files
-appsettings.Development.json
+# appsettings.Development.json
 
 # Mono auto generated files
 mono_crash.*

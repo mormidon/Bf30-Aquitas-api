@@ -10,7 +10,6 @@ namespace Catalyte.Apparel.API.Controllers
              return response.ResponseType switch
              {
                  ResponseTypes.Success => new OkObjectResult(response.ResponseObject),
-                 ResponseTypes.Created => new CreatedResult(string.Empty, response.ResponseObject),
                  ResponseTypes.NotFound => new NotFoundObjectResult(response.Message),
                  _ => new BadRequestResult()
              };
