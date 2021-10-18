@@ -1,10 +1,10 @@
-﻿using Catalyte.Apparel.Data.Model;
-using Catalyte.Apparel.Data.SeedData;
+﻿using Catalyte.Aquitas.Data.Model;
+using Catalyte.Aquitas.Data.SeedData;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 
-namespace Catalyte.Apparel.Data.Context
+namespace Catalyte.Aquitas.Data.Context
 {
     public static class Extensions
     {

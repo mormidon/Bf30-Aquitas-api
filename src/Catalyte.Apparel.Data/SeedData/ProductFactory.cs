@@ -1,9 +1,9 @@
-﻿using Catalyte.Apparel.Data.Model;
+﻿using Catalyte.Aquitas.Data.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Catalyte.Apparel.Data.SeedData
+namespace Catalyte.Aquitas.Data.SeedData
 {
     public class ProductFactory
     {

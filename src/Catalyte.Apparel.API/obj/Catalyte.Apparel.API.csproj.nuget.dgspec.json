@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.API\\Catalyte.Apparel.API.csproj": {}
+    "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.API\\Catalyte.Apparel.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.API\\Catalyte.Apparel.API.csproj": {
+    "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.API\\Catalyte.Apparel.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.API\\Catalyte.Apparel.API.csproj",
+        "projectUniqueName": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.API\\Catalyte.Apparel.API.csproj",
         "projectName": "Catalyte.Apparel.API",
-        "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.API\\Catalyte.Apparel.API.csproj",
+        "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.API\\Catalyte.Apparel.API.csproj",
         "packagesPath": "C:\\Users\\Work\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.API\\obj\\",
+        "outputPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Work\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,17 +28,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Data\\Catalyte.Apparel.Data.csproj": {
-                "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Data\\Catalyte.Apparel.Data.csproj"
+              "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Data\\Catalyte.Apparel.Data.csproj": {
+                "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Data\\Catalyte.Apparel.Data.csproj"
               },
-              "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.DTOs\\Catalyte.Apparel.DTOs.csproj": {
-                "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.DTOs\\Catalyte.Apparel.DTOs.csproj"
+              "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.DTOs\\Catalyte.Apparel.DTOs.csproj": {
+                "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.DTOs\\Catalyte.Apparel.DTOs.csproj"
               },
-              "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Providers\\Catalyte.Apparel.Providers.csproj": {
-                "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Providers\\Catalyte.Apparel.Providers.csproj"
+              "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Providers\\Catalyte.Apparel.Providers.csproj": {
+                "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Providers\\Catalyte.Apparel.Providers.csproj"
               },
-              "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Utilities\\Catalyte.Apparel.Utilities.csproj": {
-                "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Utilities\\Catalyte.Apparel.Utilities.csproj"
+              "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Utilities\\Catalyte.Apparel.Utilities.csproj": {
+                "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Utilities\\Catalyte.Apparel.Utilities.csproj"
               }
             }
           }
@@ -94,14 +94,14 @@
         }
       }
     },
-    "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Data\\Catalyte.Apparel.Data.csproj": {
+    "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Data\\Catalyte.Apparel.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Data\\Catalyte.Apparel.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Data\\Catalyte.Apparel.Data.csproj",
         "projectName": "Catalyte.Apparel.Data",
-        "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Data\\Catalyte.Apparel.Data.csproj",
+        "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Data\\Catalyte.Apparel.Data.csproj",
         "packagesPath": "C:\\Users\\Work\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Data\\obj\\",
+        "outputPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Work\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -164,14 +164,14 @@
         }
       }
     },
-    "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.DTOs\\Catalyte.Apparel.DTOs.csproj": {
+    "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.DTOs\\Catalyte.Apparel.DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.DTOs\\Catalyte.Apparel.DTOs.csproj",
+        "projectUniqueName": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.DTOs\\Catalyte.Apparel.DTOs.csproj",
         "projectName": "Catalyte.Apparel.DTOs",
-        "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.DTOs\\Catalyte.Apparel.DTOs.csproj",
+        "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.DTOs\\Catalyte.Apparel.DTOs.csproj",
         "packagesPath": "C:\\Users\\Work\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.DTOs\\obj\\",
+        "outputPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Work\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -218,14 +218,14 @@
         }
       }
     },
-    "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Providers\\Catalyte.Apparel.Providers.csproj": {
+    "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Providers\\Catalyte.Apparel.Providers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Providers\\Catalyte.Apparel.Providers.csproj",
+        "projectUniqueName": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Providers\\Catalyte.Apparel.Providers.csproj",
         "projectName": "Catalyte.Apparel.Providers",
-        "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Providers\\Catalyte.Apparel.Providers.csproj",
+        "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Providers\\Catalyte.Apparel.Providers.csproj",
         "packagesPath": "C:\\Users\\Work\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Providers\\obj\\",
+        "outputPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Providers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Work\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -242,14 +242,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Data\\Catalyte.Apparel.Data.csproj": {
-                "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Data\\Catalyte.Apparel.Data.csproj"
+              "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Data\\Catalyte.Apparel.Data.csproj": {
+                "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Data\\Catalyte.Apparel.Data.csproj"
               },
-              "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.DTOs\\Catalyte.Apparel.DTOs.csproj": {
-                "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.DTOs\\Catalyte.Apparel.DTOs.csproj"
+              "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.DTOs\\Catalyte.Apparel.DTOs.csproj": {
+                "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.DTOs\\Catalyte.Apparel.DTOs.csproj"
               },
-              "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Utilities\\Catalyte.Apparel.Utilities.csproj": {
-                "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Utilities\\Catalyte.Apparel.Utilities.csproj"
+              "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Utilities\\Catalyte.Apparel.Utilities.csproj": {
+                "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Utilities\\Catalyte.Apparel.Utilities.csproj"
               }
             }
           }
@@ -288,14 +288,14 @@
         }
       }
     },
-    "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Utilities\\Catalyte.Apparel.Utilities.csproj": {
+    "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Utilities\\Catalyte.Apparel.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Utilities\\Catalyte.Apparel.Utilities.csproj",
+        "projectUniqueName": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Utilities\\Catalyte.Apparel.Utilities.csproj",
         "projectName": "Catalyte.Apparel.Utilities",
-        "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Utilities\\Catalyte.Apparel.Utilities.csproj",
+        "projectPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Utilities\\Catalyte.Apparel.Utilities.csproj",
         "packagesPath": "C:\\Users\\Work\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.Utilities\\obj\\",
+        "outputPath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Work\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Catalyte.Apparel.Data.Model
+namespace Catalyte.Aquitas.Data.Model
 {
 
     public class BaseEntity

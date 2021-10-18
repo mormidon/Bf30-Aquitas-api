@@ -1,8 +1,8 @@
-﻿using Catalyte.Apparel.Data.Model;
+﻿using Catalyte.Aquitas.Data.Model;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Catalyte.Apparel.Data.Filters
+namespace Catalyte.Aquitas.Data.Filters
 {
     public static class ProductFilters
     {

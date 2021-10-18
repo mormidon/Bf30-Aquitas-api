@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Catalyte.Apparel.API
+namespace Catalyte.Aquitas.API
 {
     public class Program
     {

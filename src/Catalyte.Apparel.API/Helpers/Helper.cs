@@ -1,7 +1,7 @@
-﻿using Catalyte.Apparel.Utilities;
+﻿using Catalyte.Aquitas.Utilities;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Catalyte.Apparel.API.Controllers
+namespace Catalyte.Aquitas.API.Controllers
 {
     public static class Helper
      {

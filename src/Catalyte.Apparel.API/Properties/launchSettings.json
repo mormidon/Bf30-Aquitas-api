@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Catalyte.Apparel.API": {
+    "Catalyte.Aquitas.API": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Catalyte.Apparel.Data.Model
+namespace Catalyte.Aquitas.Data.Model
 {
     public class LineItem: BaseEntity
     {

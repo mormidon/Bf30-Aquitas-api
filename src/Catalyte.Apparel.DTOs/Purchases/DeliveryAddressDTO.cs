@@ -1,4 +1,6 @@
-﻿namespace Catalyte.Apparel.DTOs.Purchases
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Catalyte.Aquitas.DTOs.Purchases
 {
     public class DeliveryAddressDTO
     {
@@ -11,7 +13,7 @@
         public string DeliveryStreet2 { get; set; }
 
         public string DeliveryCity { get; set; }
-
+        [MaxLength(2,ErrorMessage = "State can only be two characters")]
         public string DeliveryState { get; set; }
 
         public int DeliveryZip { get; set; }

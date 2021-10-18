@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection.Metadata;
 
-namespace Catalyte.Apparel.DTOs.Products
+namespace Catalyte.Aquitas.DTOs.Products
 {
     public class ProductDTO
     {

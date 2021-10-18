@@ -1,6 +1,6 @@
-﻿using Catalyte.Apparel.Data.Context;
-using Catalyte.Apparel.Data.Interfaces;
-using Catalyte.Apparel.Data.Model;
+﻿using Catalyte.Aquitas.Data.Context;
+using Catalyte.Aquitas.Data.Interfaces;
+using Catalyte.Aquitas.Data.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Catalyte.Apparel.Data.Repositories
+namespace Catalyte.Aquitas.Data.Repositories
 {
     public class PurchaseRepository : IPurchaseRepository
     {

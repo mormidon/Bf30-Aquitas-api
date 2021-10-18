@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Catalyte.Apparel.DTOs.Purchases;
+using Catalyte.Aquitas.DTOs.Purchases;
 
-namespace Catalyte.Apparel.DTOs.Purchases
+namespace Catalyte.Aquitas.DTOs.Purchases
 {
     public class PurchaseDTO
     {

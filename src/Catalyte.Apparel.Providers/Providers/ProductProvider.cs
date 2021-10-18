@@ -1,14 +1,14 @@
-﻿using Catalyte.Apparel.Data.Interfaces;
-using Catalyte.Apparel.Data.Model;
-using Catalyte.Apparel.Providers.Interfaces;
-using Catalyte.Apparel.Utilities;
+﻿using Catalyte.Aquitas.Data.Interfaces;
+using Catalyte.Aquitas.Data.Model;
+using Catalyte.Aquitas.Providers.Interfaces;
+using Catalyte.Aquitas.Utilities;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
-using Catalyte.Apparel.DTOs.Products;
+using Catalyte.Aquitas.DTOs.Products;
 
-namespace Catalyte.Apparel.Providers.Providers
+namespace Catalyte.Aquitas.Providers.Providers
 {
     public class ProductProvider : IProductProvider
     {

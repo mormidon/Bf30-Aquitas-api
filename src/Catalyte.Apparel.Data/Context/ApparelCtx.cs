@@ -1,10 +1,10 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using Catalyte.Apparel.Data.Model;
-using Catalyte.Apparel.Data.SeedData;
+using Catalyte.Aquitas.Data.Model;
+using Catalyte.Aquitas.Data.SeedData;
 using Microsoft.EntityFrameworkCore;
 
-namespace Catalyte.Apparel.Data.Context
+namespace Catalyte.Aquitas.Data.Context
 {
     public class ApparelCtx : DbContext, IApparelCtx
     {

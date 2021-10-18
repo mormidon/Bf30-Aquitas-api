@@ -1,6 +1,6 @@
-using Catalyte.Apparel.Data;
-using Catalyte.Apparel.Data.Context;
-using Catalyte.Apparel.Providers;
+using Catalyte.Aquitas.Data;
+using Catalyte.Aquitas.Data.Context;
+using Catalyte.Aquitas.Providers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
-namespace Catalyte.Apparel.API
+namespace Catalyte.Aquitas.API
 {
     public class Startup
     {
@@ -44,7 +44,7 @@ namespace Catalyte.Apparel.API
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Catalyte.Apparel.API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Catalyte.Aquitas.API", Version = "v1" });
             });
         }
 
@@ -55,7 +55,7 @@ namespace Catalyte.Apparel.API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Catalyte.Apparel.API v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Catalyte.Aquitas.API v1"));
             }
 
             db.Database.EnsureCreated();

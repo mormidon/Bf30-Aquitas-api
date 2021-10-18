@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace Catalyte.Apparel.Data.Migrations
+namespace Catalyte.Aquitas.Data.Migrations
 {
     public partial class init : Migration
     {

@@ -1,8 +1,8 @@
-﻿using Catalyte.Apparel.Providers.Interfaces;
-using Catalyte.Apparel.Providers.Providers;
+﻿using Catalyte.Aquitas.Providers.Interfaces;
+using Catalyte.Aquitas.Providers.Providers;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Catalyte.Apparel.Providers
+namespace Catalyte.Aquitas.Providers
 {
     public static class ServicesConfiguration
     {

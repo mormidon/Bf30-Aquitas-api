@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Catalyte.Apparel.API
-build_property.ProjectDir = C:\Users\Work\Desktop\workbench\sports-apparel-api-csharp\src\Catalyte.Apparel.API\
+build_property.ProjectDir = C:\Users\Work\Desktop\workbench\aquitas-api\src\Catalyte.Apparel.API\

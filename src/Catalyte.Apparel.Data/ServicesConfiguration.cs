@@ -1,11 +1,11 @@
-﻿using Catalyte.Apparel.Data.Context;
-using Catalyte.Apparel.Data.Interfaces;
-using Catalyte.Apparel.Data.Repositories;
+﻿using Catalyte.Aquitas.Data.Context;
+using Catalyte.Aquitas.Data.Interfaces;
+using Catalyte.Aquitas.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Catalyte.Apparel.Data
+namespace Catalyte.Aquitas.Data
 {
 
     public static class ServicesConfiguration

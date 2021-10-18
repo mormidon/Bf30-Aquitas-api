@@ -1,11 +1,11 @@
-﻿using Catalyte.Apparel.DTOs.Products;
-using Catalyte.Apparel.Providers.Interfaces;
+﻿using Catalyte.Aquitas.DTOs.Products;
+using Catalyte.Aquitas.Providers.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Catalyte.Apparel.API.Controllers
+namespace Catalyte.Aquitas.API.Controllers
 {
     [ApiController]
     [Route("api/products")]

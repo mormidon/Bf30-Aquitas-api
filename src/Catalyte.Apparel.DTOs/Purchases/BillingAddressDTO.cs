@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Catalyte.Apparel.DTOs.Purchases
+namespace Catalyte.Aquitas.DTOs.Purchases
 {
     public class BillingAddressDTO
     {

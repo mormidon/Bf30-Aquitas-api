@@ -1,6 +1,6 @@
 using System;
 
-namespace Catalyte.Apparel.API
+namespace Catalyte.Aquitas.API
 {
     public class WeatherForecast
     {

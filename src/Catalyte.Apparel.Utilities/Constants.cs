@@ -1,4 +1,4 @@
-﻿namespace Catalyte.Apparel.Utilities
+﻿namespace Catalyte.Aquitas.Utilities
 {
     public static class Constants
     {

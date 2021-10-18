@@ -1,9 +1,9 @@
-﻿using Catalyte.Apparel.DTOs.Purchases;
-using Catalyte.Apparel.Utilities;
+﻿using Catalyte.Aquitas.DTOs.Purchases;
+using Catalyte.Aquitas.Utilities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Catalyte.Apparel.Providers.Interfaces
+namespace Catalyte.Aquitas.Providers.Interfaces
 {
     public interface IPurchaseProvider
     {

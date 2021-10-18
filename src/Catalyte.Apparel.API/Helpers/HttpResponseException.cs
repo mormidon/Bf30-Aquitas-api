@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Catalyte.Apparel.API.Helpers
+namespace Catalyte.Aquitas.API.Helpers
 {
     public class HttpResponseException : Exception
         {

@@ -1,6 +1,6 @@
-﻿using Catalyte.Apparel.DTOs.Products;
+﻿using Catalyte.Aquitas.DTOs.Products;
 
-namespace Catalyte.Apparel.DTOs.Purchases
+namespace Catalyte.Aquitas.DTOs.Purchases
 {
     public class LineItemDTO
     {

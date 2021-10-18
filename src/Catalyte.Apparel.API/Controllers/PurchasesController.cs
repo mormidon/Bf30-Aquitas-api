@@ -1,13 +1,13 @@
-﻿using Catalyte.Apparel.DTOs.Purchases;
-using Catalyte.Apparel.Providers.Interfaces;
+﻿using Catalyte.Aquitas.DTOs.Purchases;
+using Catalyte.Aquitas.Providers.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Catalyte.Apparel.Utilities;
+using Catalyte.Aquitas.Utilities;
 
-namespace Catalyte.Apparel.API.Controllers
+namespace Catalyte.Aquitas.API.Controllers
 {
     [ApiController]
     [Route("api/purchases")]
@@ -53,6 +53,12 @@ namespace Catalyte.Apparel.API.Controllers
         public async Task<ActionResult<List<PurchaseDTO>>> CreatePurchase([FromBody] CreatePurchaseDTO model)
         {
             var result = await _purchaseProvider.CreatePurchasesAsync(model);
+
+            //checks the model
+            if (!ModelState.IsValid)
+            {
+                // return an error result
+            }
 
             if (result.ResponseType == ResponseTypes.Created)
             {

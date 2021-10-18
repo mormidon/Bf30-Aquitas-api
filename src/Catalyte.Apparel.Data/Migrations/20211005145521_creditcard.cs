@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Catalyte.Apparel.Data.Migrations
+namespace Catalyte.Aquitas.Data.Migrations
 {
     public partial class creditcard : Migration
     {

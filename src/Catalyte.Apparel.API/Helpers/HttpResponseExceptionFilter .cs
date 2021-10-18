@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Catalyte.Apparel.API.Helpers
+namespace Catalyte.Aquitas.API.Helpers
 {
     public class HttpResponseExceptionFilter : IActionFilter, IOrderedFilter
     {

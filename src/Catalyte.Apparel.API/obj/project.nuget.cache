@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DSr8RjcXwtCF7mm6x5rK6C8cQjCBn38AfJehS4NLclayKdfFKoCfDm7/c3TH75LxunfMUJ64JYMRSsmmqCEAHA==",
+  "dgSpecHash": "mq+J8zB/pn4CcEezPtFqkqC4Fyj2CG4kLfApQxdfE8gQ3ilmxzgI68OEzlikMO/nNtjnyeJ8z/+82+vQCCorHg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Work\\Desktop\\workbench\\sports-apparel-api-csharp\\src\\Catalyte.Apparel.API\\Catalyte.Apparel.API.csproj",
+  "projectFilePath": "C:\\Users\\Work\\Desktop\\workbench\\aquitas-api\\src\\Catalyte.Apparel.API\\Catalyte.Aquitas.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Work\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Work\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

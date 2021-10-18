@@ -19,10 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Catalyte.Apparel.Data\Catalyte.Apparel.Data.csproj" />
-    <ProjectReference Include="..\Catalyte.Apparel.DTOs\Catalyte.Apparel.DTOs.csproj" />
-    <ProjectReference Include="..\Catalyte.Apparel.Providers\Catalyte.Apparel.Providers.csproj" />
-    <ProjectReference Include="..\Catalyte.Apparel.Utilities\Catalyte.Apparel.Utilities.csproj" />
+    <ProjectReference Include="..\Catalyte.Apparel.Data\Catalyte.Aquitas.Data.csproj" />
+    <ProjectReference Include="..\Catalyte.Apparel.DTOs\Catalyte.Aquitas.DTOs.csproj" />
+    <ProjectReference Include="..\Catalyte.Apparel.Providers\Catalyte.Aquitas.Providers.csproj" />
+    <ProjectReference Include="..\Catalyte.Apparel.Utilities\Catalyte.Aquitas.Utilities.csproj" />
   </ItemGroup>
 
 </Project>
