@@ -1,9 +1,5 @@
 ﻿using buildfor_2030_Aquitas_api.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace buildfor_2030_Aquitas_api.Data
 {
