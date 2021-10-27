@@ -1,7 +1,9 @@
+using buildfor_2030_Aquitas_api.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -32,10 +34,11 @@ namespace buildfor_2030_Aquitas_api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "buildfor_2030_Aquitas_api", Version = "v1" });
             });
+            services.AddDbContext<ApiDbContext>(option => option.UseNpgsql(Configuration.GetConnectionString("DbConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ApiDbContext dbContext)
         {
             if (env.IsDevelopment())
             {
@@ -43,6 +46,8 @@ namespace buildfor_2030_Aquitas_api
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "buildfor_2030_Aquitas_api v1"));
             }
+
+            dbContext.Database.EnsureCreated();
 
             app.UseHttpsRedirection();
 
