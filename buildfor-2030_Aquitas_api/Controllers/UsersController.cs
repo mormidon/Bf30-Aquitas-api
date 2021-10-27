@@ -61,8 +61,17 @@ namespace buildfor_2030_Aquitas_api.Controllers
             }
             else
             {
-                user.Title = userObj.Title;
-                user.Language = userObj.Language;
+                user.FirstName = userObj.FirstName;
+                user.LastName = userObj.LastName;
+                user.ScreenName = userObj.ScreenName;
+                user.Email = userObj.Email;
+                user.PhoneNumber = userObj.PhoneNumber;
+                user.Password = userObj.Password;
+                user.LinkedInUsername = userObj.LinkedInUsername;
+                user.Street = userObj.Street;
+                user.City = userObj.City;
+                user.Zip = userObj.Zip;
+                user.Country = userObj.Country;
                 await _dbContext.SaveChangesAsync();
                 return Ok("User updated successfully");
             }
