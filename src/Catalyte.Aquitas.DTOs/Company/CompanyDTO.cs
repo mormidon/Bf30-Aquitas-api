@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Catalyte.Aquitas.DTOs.Review;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,6 @@ namespace Catalyte.Aquitas.DTOs.Company
 
         public bool IsPrivateCompany { get; set; }
 
-        public ICollection<Review> Reviews { get; set; }
+        public string Reviews { get; set; }
     }
 }

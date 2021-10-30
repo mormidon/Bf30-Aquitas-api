@@ -24,6 +24,6 @@ namespace Catalyte.Aquitas.Data.Model
 
         public bool IsPrivateCompany { get; set; }
 
-        public ICollection<Review> Reviews { get; set; }
+        public string Reviews { get; set; }
     }
 }

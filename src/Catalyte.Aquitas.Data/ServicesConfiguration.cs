@@ -19,6 +19,7 @@ namespace Catalyte.Aquitas.Data
             services.AddScoped<IApparelCtx>(provider => provider.GetService<ApparelCtx>());
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IPurchaseRepository, PurchaseRepository>();
+            services.AddScoped<ICompanyRepository, CompanyRepository>();
 
             return services;
 

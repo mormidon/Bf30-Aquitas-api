@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Catalyte.Aquitas.Providers.Interfaces
+namespace Catalyte.Aquitas.DTOs.Review
 {
-    public interface ICompanyProvider
+    public class ReviewDTO
     {
         
     }

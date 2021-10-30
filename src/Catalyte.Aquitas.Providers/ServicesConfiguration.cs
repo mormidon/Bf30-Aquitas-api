@@ -10,6 +10,7 @@ namespace Catalyte.Aquitas.Providers
         {
             services.AddScoped<IProductProvider, ProductProvider>();
             services.AddScoped<IPurchaseProvider, PurchaseProvider>();
+            services.AddScoped<ICompanyProvider, CompanyProvider>();
 
             return services;
         }

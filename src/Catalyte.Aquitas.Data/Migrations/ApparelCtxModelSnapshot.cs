@@ -19,6 +19,76 @@ namespace Catalyte.Aquitas.Data.Migrations
                 .HasAnnotation("ProductVersion", "5.0.9")
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
+            modelBuilder.Entity("Catalyte.Aquitas.Data.Model.AquitasUser", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<int>("Age")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<DateTime>("DateModified")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("text");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AquitasUsers");
+                });
+
+            modelBuilder.Entity("Catalyte.Aquitas.Data.Model.Company", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<DateTime>("DateModified")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<int>("EmployeeSize")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Industry")
+                        .HasColumnType("text");
+
+                    b.Property<bool>("IsPrivateCompany")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Location")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
+                    b.Property<string>("Reviews")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Summary")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Website")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Companies");
+                });
+
             modelBuilder.Entity("Catalyte.Aquitas.Data.Model.LineItem", b =>
                 {
                     b.Property<int>("Id")
@@ -55,8 +125,8 @@ namespace Catalyte.Aquitas.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2021, 10, 7, 17, 42, 31, 7, DateTimeKind.Utc).AddTicks(1098),
-                            DateModified = new DateTime(2021, 10, 7, 17, 42, 31, 7, DateTimeKind.Utc).AddTicks(1102),
+                            DateCreated = new DateTime(2021, 10, 30, 20, 36, 57, 111, DateTimeKind.Utc).AddTicks(6625),
+                            DateModified = new DateTime(2021, 10, 30, 20, 36, 57, 111, DateTimeKind.Utc).AddTicks(6631),
                             ProductId = 1,
                             PurchaseId = 1,
                             Quantity = 1
@@ -121,42 +191,42 @@ namespace Catalyte.Aquitas.Data.Migrations
                         {
                             Id = 1,
                             Active = false,
-                            Category = "Baseball",
-                            DateCreated = new DateTime(2021, 10, 7, 17, 42, 31, 6, DateTimeKind.Utc).AddTicks(1722),
-                            DateModified = new DateTime(2021, 10, 7, 17, 42, 31, 6, DateTimeKind.Utc).AddTicks(2044),
+                            Category = "Skateboarding",
+                            DateCreated = new DateTime(2021, 10, 30, 20, 36, 57, 110, DateTimeKind.Utc).AddTicks(4355),
+                            DateModified = new DateTime(2021, 10, 30, 20, 36, 57, 110, DateTimeKind.Utc).AddTicks(4847),
                             Demographic = "Men",
-                            GlobalProductCode = "po-AEOHPRU",
-                            ReleaseDate = new DateTime(2021, 10, 7, 13, 42, 31, 4, DateTimeKind.Local).AddTicks(3406),
+                            GlobalProductCode = "po-JZGOCQO",
+                            ReleaseDate = new DateTime(2021, 10, 30, 15, 36, 57, 108, DateTimeKind.Local).AddTicks(3271),
                             Sku = "SHL-100-Blue",
-                            StyleNumber = "scEDMDI",
+                            StyleNumber = "scLFDVY",
                             Type = "Pant"
                         },
                         new
                         {
                             Id = 2,
                             Active = false,
-                            Category = "Hockey",
-                            DateCreated = new DateTime(2021, 10, 7, 17, 42, 31, 6, DateTimeKind.Utc).AddTicks(2399),
-                            DateModified = new DateTime(2021, 10, 7, 17, 42, 31, 6, DateTimeKind.Utc).AddTicks(2400),
+                            Category = "Soccer",
+                            DateCreated = new DateTime(2021, 10, 30, 20, 36, 57, 110, DateTimeKind.Utc).AddTicks(5435),
+                            DateModified = new DateTime(2021, 10, 30, 20, 36, 57, 110, DateTimeKind.Utc).AddTicks(5436),
                             Demographic = "Women",
-                            GlobalProductCode = "po-BYLCRRR",
-                            ReleaseDate = new DateTime(2021, 10, 7, 13, 42, 31, 6, DateTimeKind.Local).AddTicks(2378),
+                            GlobalProductCode = "po-DWEMRNT",
+                            ReleaseDate = new DateTime(2021, 10, 30, 15, 36, 57, 110, DateTimeKind.Local).AddTicks(5277),
                             Sku = "SHL-100-Red",
-                            StyleNumber = "scNFSFW",
+                            StyleNumber = "scFYYPL",
                             Type = "Pant"
                         },
                         new
                         {
                             Id = 3,
                             Active = false,
-                            Category = "Soccer",
-                            DateCreated = new DateTime(2021, 10, 7, 17, 42, 31, 6, DateTimeKind.Utc).AddTicks(2410),
-                            DateModified = new DateTime(2021, 10, 7, 17, 42, 31, 6, DateTimeKind.Utc).AddTicks(2411),
+                            Category = "Football",
+                            DateCreated = new DateTime(2021, 10, 30, 20, 36, 57, 110, DateTimeKind.Utc).AddTicks(5447),
+                            DateModified = new DateTime(2021, 10, 30, 20, 36, 57, 110, DateTimeKind.Utc).AddTicks(5448),
                             Demographic = "Women",
-                            GlobalProductCode = "po-XNQIMLJ",
-                            ReleaseDate = new DateTime(2021, 10, 7, 13, 42, 31, 6, DateTimeKind.Local).AddTicks(2407),
+                            GlobalProductCode = "po-DGGQMOV",
+                            ReleaseDate = new DateTime(2021, 10, 30, 15, 36, 57, 110, DateTimeKind.Local).AddTicks(5443),
                             Sku = "HOV-AB-KJ",
-                            StyleNumber = "scGQBDI",
+                            StyleNumber = "scKILFU",
                             Type = "Pant"
                         },
                         new
@@ -164,55 +234,55 @@ namespace Catalyte.Aquitas.Data.Migrations
                             Id = 4,
                             Active = false,
                             Category = "Football",
-                            DateCreated = new DateTime(2021, 10, 7, 17, 42, 31, 6, DateTimeKind.Utc).AddTicks(2418),
-                            DateModified = new DateTime(2021, 10, 7, 17, 42, 31, 6, DateTimeKind.Utc).AddTicks(2419),
+                            DateCreated = new DateTime(2021, 10, 30, 20, 36, 57, 110, DateTimeKind.Utc).AddTicks(5455),
+                            DateModified = new DateTime(2021, 10, 30, 20, 36, 57, 110, DateTimeKind.Utc).AddTicks(5456),
                             Demographic = "Women",
-                            GlobalProductCode = "po-TRPDZRH",
-                            ReleaseDate = new DateTime(2021, 10, 7, 13, 42, 31, 6, DateTimeKind.Local).AddTicks(2416),
+                            GlobalProductCode = "po-BXECFTK",
+                            ReleaseDate = new DateTime(2021, 10, 30, 15, 36, 57, 110, DateTimeKind.Local).AddTicks(5453),
                             Sku = "TLX-DRESS-SM",
-                            StyleNumber = "scZCTDA",
+                            StyleNumber = "scIBFTG",
                             Type = "Pant"
                         },
                         new
                         {
                             Id = 5,
                             Active = false,
-                            Category = "Baseball",
-                            DateCreated = new DateTime(2021, 10, 7, 17, 42, 31, 6, DateTimeKind.Utc).AddTicks(2462),
-                            DateModified = new DateTime(2021, 10, 7, 17, 42, 31, 6, DateTimeKind.Utc).AddTicks(2463),
-                            Demographic = "Women",
-                            GlobalProductCode = "po-ZVCSNDG",
-                            ReleaseDate = new DateTime(2021, 10, 7, 13, 42, 31, 6, DateTimeKind.Local).AddTicks(2460),
+                            Category = "Football",
+                            DateCreated = new DateTime(2021, 10, 30, 20, 36, 57, 110, DateTimeKind.Utc).AddTicks(5462),
+                            DateModified = new DateTime(2021, 10, 30, 20, 36, 57, 110, DateTimeKind.Utc).AddTicks(5463),
+                            Demographic = "Men",
+                            GlobalProductCode = "po-BIZRDQH",
+                            ReleaseDate = new DateTime(2021, 10, 30, 15, 36, 57, 110, DateTimeKind.Local).AddTicks(5460),
                             Sku = "ATK-34-RD",
-                            StyleNumber = "scPVUVY",
+                            StyleNumber = "scZWELP",
                             Type = "Pant"
                         },
                         new
                         {
                             Id = 6,
                             Active = false,
-                            Category = "Running",
-                            DateCreated = new DateTime(2021, 10, 7, 17, 42, 31, 6, DateTimeKind.Utc).AddTicks(2472),
-                            DateModified = new DateTime(2021, 10, 7, 17, 42, 31, 6, DateTimeKind.Utc).AddTicks(2473),
+                            Category = "Baseball",
+                            DateCreated = new DateTime(2021, 10, 30, 20, 36, 57, 110, DateTimeKind.Utc).AddTicks(5472),
+                            DateModified = new DateTime(2021, 10, 30, 20, 36, 57, 110, DateTimeKind.Utc).AddTicks(5473),
                             Demographic = "Women",
-                            GlobalProductCode = "po-HKZIFAT",
-                            ReleaseDate = new DateTime(2021, 10, 7, 13, 42, 31, 6, DateTimeKind.Local).AddTicks(2470),
+                            GlobalProductCode = "po-NTGWAVE",
+                            ReleaseDate = new DateTime(2021, 10, 30, 15, 36, 57, 110, DateTimeKind.Local).AddTicks(5470),
                             Sku = "TRE-33-LRG",
-                            StyleNumber = "scNDBXM",
+                            StyleNumber = "scBTMGT",
                             Type = "Pant"
                         },
                         new
                         {
                             Id = 7,
                             Active = false,
-                            Category = "Hockey",
-                            DateCreated = new DateTime(2021, 10, 7, 17, 42, 31, 6, DateTimeKind.Utc).AddTicks(2479),
-                            DateModified = new DateTime(2021, 10, 7, 17, 42, 31, 6, DateTimeKind.Utc).AddTicks(2480),
+                            Category = "Football",
+                            DateCreated = new DateTime(2021, 10, 30, 20, 36, 57, 110, DateTimeKind.Utc).AddTicks(5479),
+                            DateModified = new DateTime(2021, 10, 30, 20, 36, 57, 110, DateTimeKind.Utc).AddTicks(5480),
                             Demographic = "Women",
-                            GlobalProductCode = "po-KXELTWH",
-                            ReleaseDate = new DateTime(2021, 10, 7, 13, 42, 31, 6, DateTimeKind.Local).AddTicks(2477),
+                            GlobalProductCode = "po-EBXFARJ",
+                            ReleaseDate = new DateTime(2021, 10, 30, 15, 36, 57, 110, DateTimeKind.Local).AddTicks(5478),
                             Sku = "TRE-30-SM",
-                            StyleNumber = "scUZKVI",
+                            StyleNumber = "scALORX",
                             Type = "Pant"
                         });
                 });
@@ -322,8 +392,8 @@ namespace Catalyte.Aquitas.Data.Migrations
                             CVV = 456,
                             CardHolder = "Max Perkins",
                             CardNumber = "1435678998761234",
-                            DateCreated = new DateTime(2021, 10, 7, 17, 42, 31, 7, DateTimeKind.Utc).AddTicks(4798),
-                            DateModified = new DateTime(2021, 10, 7, 17, 42, 31, 7, DateTimeKind.Utc).AddTicks(4801),
+                            DateCreated = new DateTime(2021, 10, 30, 20, 36, 57, 112, DateTimeKind.Utc).AddTicks(2094),
+                            DateModified = new DateTime(2021, 10, 30, 20, 36, 57, 112, DateTimeKind.Utc).AddTicks(2103),
                             DeliveryCity = "Birmingham",
                             DeliveryFirstName = "Max",
                             DeliveryLastName = "Space",

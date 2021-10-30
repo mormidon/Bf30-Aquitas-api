@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Catalyte.Aquitas.Data.Model
 {
-    public class Review
+    public class Review : BaseEntity
     {
-        
+        public Review()
+        {
+
+        }
     }
 }

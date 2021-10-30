@@ -17,6 +17,8 @@ namespace Catalyte.Aquitas.Data.Context
 
         public DbSet<AquitasUser> AquitasUsers { get; set; }
 
+        public DbSet<Company> Companies { get; set; }
+
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken());
     }
 

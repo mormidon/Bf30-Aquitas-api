@@ -12,5 +12,7 @@ namespace Catalyte.Aquitas.Data.Interfaces
         Task<Company> GetCompanyByIdAsync(int companyId);
 
         Task<IEnumerable<Company>> GetCompaniesAsync();
+
+        Task<Company> CreateCompanyAsync(Company company);
     }
 }
