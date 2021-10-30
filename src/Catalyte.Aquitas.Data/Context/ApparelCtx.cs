@@ -20,6 +20,8 @@ namespace Catalyte.Aquitas.Data.Context
 
         public DbSet<AquitasUser> AquitasUsers { get; set; }
 
+        public DbSet<Company> Companies { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
