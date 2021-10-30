@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-
-namespace Catalyte.Aquitas.Utilities
+﻿namespace Catalyte.Aquitas.Utilities
 {
     public class ProviderResponse<T>
     {

@@ -1,14 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Catalyte.Aquitas.DTOs.Products;
+﻿using Catalyte.Aquitas.DTOs.Company;
 using Catalyte.Aquitas.Providers.Interfaces;
-using Microsoft.Extensions.Logging;
-using System.Threading.Tasks;
-using Catalyte.Aquitas.DTOs.Company;
 using Catalyte.Aquitas.Utilities;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Catalyte.Aquitas.API.Controllers
 {

@@ -1,11 +1,4 @@
-﻿using Catalyte.Aquitas.DTOs.Review;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Catalyte.Aquitas.DTOs.Company
+﻿namespace Catalyte.Aquitas.DTOs.Company
 {
     public class CompanyDTO
     {

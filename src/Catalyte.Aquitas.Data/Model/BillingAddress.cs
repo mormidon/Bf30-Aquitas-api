@@ -20,7 +20,7 @@ namespace Catalyte.Aquitas.Data.Model
 
         public string Phone { get; set; }
 
-       sealed class BillingAddressEqualityComparer : IEqualityComparer<BillingAddress>
+        sealed class BillingAddressEqualityComparer : IEqualityComparer<BillingAddress>
         {
             public bool Equals(BillingAddress x, BillingAddress y)
             {
@@ -37,7 +37,7 @@ namespace Catalyte.Aquitas.Data.Model
             }
         }
 
-       public static IEqualityComparer<BillingAddress> BillingAddressComparer { get; set; } = new BillingAddressEqualityComparer();
+        public static IEqualityComparer<BillingAddress> BillingAddressComparer { get; set; } = new BillingAddressEqualityComparer();
 
     }
 }

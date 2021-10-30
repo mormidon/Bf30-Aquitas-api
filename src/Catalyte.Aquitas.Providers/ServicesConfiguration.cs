@@ -8,8 +8,6 @@ namespace Catalyte.Aquitas.Providers
     {
         public static IServiceCollection AddProviders(this IServiceCollection services)
         {
-            services.AddScoped<IProductProvider, ProductProvider>();
-            services.AddScoped<IPurchaseProvider, PurchaseProvider>();
             services.AddScoped<ICompanyProvider, CompanyProvider>();
 
             return services;

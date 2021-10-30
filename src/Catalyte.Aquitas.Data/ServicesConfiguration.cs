@@ -17,8 +17,6 @@ namespace Catalyte.Aquitas.Data
                 options.UseNpgsql(config.GetConnectionString("CatalyteApparel")));
 
             services.AddScoped<IApparelCtx>(provider => provider.GetService<ApparelCtx>());
-            services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped<IPurchaseRepository, PurchaseRepository>();
             services.AddScoped<ICompanyRepository, CompanyRepository>();
 
             return services;
