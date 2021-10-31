@@ -13,6 +13,8 @@ namespace Catalyte.Aquitas.Data.Context
 
         public DbSet<Company> Companies { get; set; }
 
+        public DbSet<User> Users { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

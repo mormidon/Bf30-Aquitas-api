@@ -9,6 +9,7 @@ namespace Catalyte.Aquitas.Providers
         public static IServiceCollection AddProviders(this IServiceCollection services)
         {
             services.AddScoped<ICompanyProvider, CompanyProvider>();
+            services.AddScoped<IUserProvider, UserProvider>();
 
             return services;
         }
