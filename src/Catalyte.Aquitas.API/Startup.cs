@@ -31,6 +31,17 @@ namespace Catalyte.Aquitas.API
             services.AddDataServices(Configuration);
             services.AddProviders();
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: "cors",
+                                  builder =>
+                                  {
+                                      builder.AllowAnyOrigin()
+                                             .AllowAnyHeader()
+                                             .AllowAnyMethod();
+                                  });
+            });
+
             //services.AddAuthentication()
             //    .AddGoogle(options =>
             //    {
@@ -63,6 +74,8 @@ namespace Catalyte.Aquitas.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("cors");
 
             app.UseAuthorization();
 
